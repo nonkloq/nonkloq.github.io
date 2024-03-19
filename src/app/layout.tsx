@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/svgs/favicon.svg" type="image/svg" />
-        <GoogleAnalytics gaId={process.env.GID!}/>
+        <GoogleAnalytics gaId="G-QY1XBQ50GP"/>
       </head>
 
       <body className={pagefont.className}  suppressHydrationWarning={true}>
