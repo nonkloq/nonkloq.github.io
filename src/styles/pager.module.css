@@ -1,0 +1,246 @@
+.pagerMainDiv:focus {
+    outline: none;
+
+}
+
+
+
+
+.navBar {
+    display: flex;
+    z-index: 10;
+    top:0;
+    font-size: large;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar span {
+    cursor: pointer;
+    font-size: var(--fsize-mid);
+    transition: color var(--base-transition-time) ease;
+}
+
+.navBar span:hover {
+    color: var(--hover-color);
+
+}
+
+.arrowContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+.leftButton em,
+.rightButton em {
+    display: block;
+    height: 36px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+}
+
+.leftButton,
+.rightButton{
+    width: 36px;
+    height: 50px;
+    /* margin-right: 10px; */
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.leftButton em::after, 
+.rightButton em::after,
+.leftButton em::before,
+.rightButton em::before{
+    transition: all var(--base-transition-time) ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    border-radius: 10px;
+    background-color: var(--text-color-dark);
+
+}
+
+.leftButton em::before,
+.rightButton em::before {
+    top: 50%;
+
+}
+.leftButton em::after, 
+.rightButton em::after {
+    bottom: -91%;  
+}
+.rightButton em::before {
+    transform: rotate(-60deg);
+}
+.rightButton em::after {
+    transform: rotate(-120deg);
+}
+.leftButton em::before {
+    transform: rotate(60deg);
+}
+.leftButton em::after {
+    transform: rotate(120deg);
+}
+
+
+.pagerBody {
+    position: relative;
+    display: flex;
+
+}
+.pagerContent{
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.pagerContent section {
+    margin-bottom: 50px;
+
+}
+
+.contentDiv {
+    margin-left: 10px;
+}
+
+.contentDivLi {
+    margin-left: 10px;
+}
+.contentDivLi {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: var(--fsize-smol);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}
+.contentDiv a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+.contentDiv a:visited {
+    color: var(--visited-color);
+}
+.contentDivLi ul {
+    margin-left: 10px;
+    padding: 0;
+}
+
+
+.projectLinksDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.projectLinksDiv img {
+    background-color: var(--text-color-dark);
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    margin-left: 10px;
+    width: var(--fsize-mid);
+    height: var(--fsize-mid);
+    transition: background-color var(--base-transition-time) ease;
+}
+
+.projectLinksDiv img:hover {
+    background-color: var(--text-color);
+}
+
+
+.skillsContainer {
+    margin-top: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+
+}
+
+
+.skillsContainer span {
+    display: inline;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: var(--fsize-smol);
+    background-color: var(--skill-box-bg);
+    color : var(--skill-box-color);
+    border: 2px solid var(--skill-box-color);
+}
+
+
+
+@media (hover: hover) and (pointer: fine){
+    .leftButton:hover  em::before,
+    .rightButton:hover  em::before,
+    .leftButton:hover  em::after,
+    .rightButton:hover  em::after {
+        background-color: var(--hover-color);
+
+    }
+
+    .leftButton:hover  em::before,
+    .rightButton:hover  em::before  {
+        top: 30%
+    }
+    .leftButton:hover  em::after,
+    .rightButton:hover  em::after {
+        bottom: -104%;
+    }
+    .leftButton:hover  em::before {
+        transform: rotate(25deg);
+    }
+    .leftButton:hover  em::after {
+        transform: rotate(155deg);
+    }
+    .rightButton:hover  em::before {
+        transform: rotate(-25deg);
+    }
+    .rightButton:hover  em::after {
+        transform: rotate(-155deg);
+    }
+
+}
+
+
+@media screen and (max-width: 1279px) {
+    .pagerContent {
+        width: 80vw;
+    }
+    
+}
+
+/* Media query for web/desktop devices */
+@media screen and (min-width: 1280px) {
+    .pagerContent {
+        width: 55vw;
+    }
+
+}
+
+
+.pagerContent article {
+    animation: slideInTitle var(--normal-transition-time) ease;
+}
+
+@keyframes slideInTitle {
+    from {
+        opacity: 0;
+      transform: translatey(20px);
+    }
+    to {
+        opacity: 1;
+      transform: translate3d(0);
+    }
+  }

@@ -1,0 +1,168 @@
+:root {
+  --base-transition-time: 0.3s;
+  --normal-transition-time: 0.7s;
+  --smooth-transition-time: 1s;
+
+
+  /* Section divs padding */
+  --max-margin-top: 20vh;
+  --normal-margin-top: 15vh;
+  --min-margin-top: 10vh;
+
+
+  --main-div-padding-left: 10vw;
+  --main-div-padding-right: 5vw;
+
+  --li-padding: 5px;
+
+
+  --image-width: 55vw;
+  --image-height: 30vw;
+
+  --image-width-small: 500px;
+  --image-height-small: 300px;
+
+  /* Font sizes */
+  --fsize-xsmol: .75em;
+  --fsize-smol: .95em;
+  --fsize-about: 1.04em;
+  --fsize-mid: 1.45em;
+  --fsize-large: 1.95em;
+  --fsize-xlarge: 2.45em;
+
+
+
+  --primary-color: #2E3440;
+  --overlay-color:  #3b4252c8;
+
+  --secondary-color: #4C566A;
+  
+  
+  --sub-text-color: #929AAA;
+  --text-color-dark: #D8DEE9;
+  --text-color: #ECEFF4;
+
+  --skill-box-color: #A3BE8C;
+  --skill-box-bg: rgba(83, 110, 60, 0.1);
+
+  /* --skill-box-color: #D8DEE9;  */
+  /* --skill-box-bg: rgba(156, 159, 164, 0.1); */
+
+  --highlight-color: #4C566A;
+  --hover-color: #88C0D0;
+
+  --link-color: #81A1C1  ;
+  --visited-color: #B48EAD;
+
+  --tag-color: #b7d89a;
+
+}
+code {
+  background-color: var(--secondary-color);
+  color: var(--text-color-dark);
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 3px;
+}
+small {
+  padding-bottom: 10px;
+  font-size: var(--fsize-xsmol);
+}
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-color);
+}
+
+blockquote {
+  border-left: 4px solid var(--sub-text-color); 
+  padding: 0 1em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+blockquote p {
+  /* font-style: italic; */
+  color: var(--sub-text-color);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; prevents scrollbars from appearing */
+  /* box-sizing: border-box; */
+}
+
+hr {
+  border: none;
+  height: 1px; 
+  background-color: #ccc;
+  opacity: 0.2;
+}
+
+/* Break point For Mobile Devices */
+@media screen and (max-width: 1279px) {
+  :root {
+    --main-div-padding-left: 5vw;
+    --main-div-padding-right: 2vw;
+
+    --li-padding: 3px;
+
+    --image-width: 80vw;
+    --image-height: 50vw;
+
+    --image-width-small: 300px;
+    --image-height-small: 180px;
+
+    --fsize-xsmol: .5em;
+    --fsize-smol: .8em;
+    --fsize-about: .9em;
+    --fsize-mid: 1.1em;
+    --fsize-large: 1.5em;
+    --fsize-xlarge: 2em;
+  }
+
+
+  
+}
+
+@media screen and (max-height: 700px) {
+  :root {
+    --min-margin-top: 1vh;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sub-text-color);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb-piece {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  transition: background-color var(--base-transition-time) ease-in-out;
+}
+

@@ -1,0 +1,221 @@
+
+/* Main div */
+.homedivmain {
+  padding-left: var(--main-div-padding-left);
+  padding-right: var(--main-div-padding-left);
+}
+
+/* About Section */
+.aboutDiv {
+  font-size: var(--fsize-about);
+  margin-top: var(--normal-margin-top);
+  padding-top: 10px;
+  animation: fadeIn var(--normal-transition-time) ease-in-out 0s;
+}
+
+
+/* Skills Section */
+.skillsDiv {
+  margin-top: var(--normal-margin-top);
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skillsDiv a:visited {
+  color: inherit;
+}
+.skillsDiv a:hover {
+  text-decoration: underline;
+}
+.skillsDiv a,
+.skillsDiv span {
+  font-size: var(--fsize-smol);
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid;
+  text-decoration: none;
+  color: inherit;
+  animation: flipInY var(--smooth-transition-time) ease, fillBackground var(--smooth-transition-time) ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+
+/* Intro Section */
+.introDiv {
+
+  margin-top: var(--normal-margin-top);
+  animation: fadeInSlow var(--smooth-transition-time) ease;
+}
+.introDiv span {
+  display: inline-block;
+}
+.introDiv h6 {
+  font-size: var(--fsize-smol);
+  display: inline;
+}
+
+.introDiv span h3 {
+  font-size: var(--fsize-large);
+  display: inline;
+}
+
+.introDiv h4 {
+  /* color: var(--text-color-dark); */
+  font-size:  var(--fsize-mid);
+}
+.introDiv h1 {
+  font-size: var(--fsize-xlarge);
+}
+
+/* Contact Section */
+.contactDiv {
+  margin-top: var(--normal-margin-top);
+  animation: fadeIn2 var(--normal-transition-time) ease;
+}
+
+.contactDiv h3 {
+  display: inline;
+  font-size: var(--fsize-mid);
+  
+}
+.contactDiv p {
+  display: inline;
+  font-size: var(--fsize-about);
+}
+
+.resumeBtn {
+  margin-top: 2em;
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  font-size: var(--fsize-smoll);
+  border: 1px solid var(--text-color-dark);
+  color: var(--text-color-dark);
+  background-color: var(--secondary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition:  all var(--base-transition-time) ease;
+}
+
+.contactDiv .resumeBtn:hover {
+  color: var(--hover-color);
+  border-color: var(--hover-color);
+  box-shadow: 0px 0px 2px 2px var(--hover-color);
+}
+
+.emailLink {
+  display: inline-block;
+  text-decoration: underline;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: var(--text-color);
+  transform: translateY(3px);
+  border-radius: 5px;
+  transition: transform var(--base-transition-time) ease, background-color var(--base-transition-time) ease-in;
+}
+.emailLink:visited,
+.resumeBtn:visited {
+  color: var(--text-color);
+}
+
+.emailLink:hover{
+  transform: translateY(0);
+  background-color: var(--highlight-color);
+  text-decoration: none;
+}
+
+
+/* Animations --------------------------------------------------------------- */
+
+/* For Intro */
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  30% {
+    opacity: 0; 
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* For about */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* For contact */
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* For skills */
+@keyframes fillBackground {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes flipInY {
+  0% {
+      transform: perspective(400px) rotateY(90deg) translateY(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: perspective(400px) rotateY(0deg) translateY(0);
+      opacity: 1;
+  }
+}
+
+
+/* Media Query -------------------------------------------------------------- */
+/* Media query for mobile devices */
+@media screen and (max-width: 1279px) {
+  .contactDiv h3 {
+    text-decoration: underline;
+    display: inline-block;
+  
+  }
+  .contactDiv p {
+    display: inline-block;
+  }
+
+  
+}
+
+@media screen and (max-height: 700px) {
+  .skillsDiv{
+    margin-top: var(--min-margin-top);
+  }
+  
+}

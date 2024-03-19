@@ -1,0 +1,60 @@
+.menudiv {
+    position: absolute;
+    bottom: 0;
+    float: right;
+}
+
+  
+.menudiv ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menudiv li{
+    opacity: 0.9;
+    color: var(--sub-text-color);
+    font-size: var(--fsize-mid);
+    padding: 4px;    
+    transition: color var(--normal-transition-time) ease, transform var(--base-transition-time) ease;;
+    cursor: pointer;
+}
+
+.menudiv a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menudiv a:visited{
+    color: inherit;
+}
+
+.menudiv .selectedoption {
+    opacity: 1;
+    color: var(--text-color);
+    font-weight: bold;
+    transform: translateX(-6px);
+}
+
+
+.menudiv .menuitem:hover {
+    color: var(--text-color-dark);
+}
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 1279px) {
+    .menudiv {
+        right: 1em;
+        padding-bottom: 2em;
+    }
+    
+}
+
+/* Media query for web/desktop devices */
+@media screen and (min-width: 1280px) {
+    .menudiv {
+        right: 10%;
+        padding-bottom: 5%;
+    }
+}

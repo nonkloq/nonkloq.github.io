@@ -1,0 +1,112 @@
+/* .sidebarDiv { */
+    /* opacity: 0; */
+    /* animation: fadeInUp var(--smooth-transition-time) ease; */
+/* } */
+
+/* @keyframes fadeInUp { */
+    /* 0% { */
+        /* opacity: 0; */
+        /* transform: translateY(calc(100% + 40px)); */
+    /* } */
+    /* 100% { */
+        /* opacity: 1; */
+        /* transform: translateY(0); */
+
+    /* } */
+    
+/* } */
+
+.logoDiv {
+    width: var(--fsize-large);
+    height: var(--fsize-large);
+    transition: all var(--base-transition-time) ease;
+}
+.logoDiv svg {
+    transition: fill var(--base-transition-time) ease;
+    fill: var(--sub-text-color);
+}
+
+.logoDiv:hover svg{
+    fill: var(--text-color-dark);
+}
+.logoDiv:hover {
+    filter: drop-shadow(0px 0px 10px var(--hover-color)); 
+    transform: translateY(-3px);
+}
+
+
+.sidebarDiv ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.sidebarDiv li {
+    list-style-type: none;
+}
+
+
+
+
+/* Media query for mobile devices */
+@media screen and (max-width: 1279px) {
+    .sidebarDiv {
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        margin-bottom: .7em;
+
+    }
+    .sidebarDiv ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .sidebarDiv li {
+        float: left;
+        margin-left: 1.5em;
+    }
+  
+}
+
+/* Media query for web/desktop devices */
+@media screen and (min-width: 1280px) {
+
+    .sidebarDiv {
+        position: fixed;
+        left: 0;
+        top: 0;
+        box-sizing: border-box; 
+    }
+
+    .sidebarDiv ul::after{
+        opacity: .69;
+        content: "";
+        background-color: var(--sub-text-color);
+        display: block;
+        width: 1px;
+        margin: 30px auto;
+        margin-bottom: 0;
+        height: var(--normal-margin-top);
+    }
+
+    .sidebarDiv ul {
+        padding-left: 3em;
+
+    }
+
+    .sidebarDiv {
+        height: 100%;
+    }
+
+    .sidebarDiv li {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+}

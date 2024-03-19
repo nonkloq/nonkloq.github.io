@@ -1,0 +1,64 @@
+/* Filter Tags */
+.filterTags {
+    margin: 1em 1em;
+}  
+.filterTags span {
+    display: inline-block;
+
+    color: var(--text-color-dark);
+    opacity: 0.7;
+    background-color:var(--secondary-color);
+
+    padding: 6px 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    font-size: var(--fsize-smol);
+    cursor: pointer;
+    transition: all var(--base-transition-time) ease;
+}
+.filterTags span:hover {
+    opacity: 1;
+}
+.filterTags .activeTag {
+    opacity: .9;
+
+    background-color: var(--text-color-dark);
+    color: #000; /* var(--primary-color); */
+    /* font-weight: bold; */
+}
+.filterTags .activeTag:hover {
+    background-color: var(--text-color-dark);
+    color: var(--primary-color);
+}
+
+
+/* Main Frame */
+.projectMainDiv{
+ margin: 1em;
+ transition: all var(--normal-transition-time) ease;
+}
+
+/* Projects Grid */
+.projectsGrid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-items: center;
+    gap: 10px;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1079px) {
+    
+    .projectsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+}
+

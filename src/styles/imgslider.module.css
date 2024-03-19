@@ -1,0 +1,106 @@
+/* Main Container */
+.imgSliderContainer{
+    width: fit-content;
+    position: relative;
+    margin-top: 1em;
+    border: 2px solid var(--not-select);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 2em;
+}
+
+
+
+/* Sub Container to hold the image and overlay buttons */
+.Images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+    width: var(--image-width);
+    height: var(--image-height);
+    
+}
+
+/* Overaly Buttons */
+.leftButton, 
+.rightButton {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    transition: opacity var(--base-transition-time) ease-out 0s;
+}
+.leftButton {
+    left: 0;
+    padding-left: 1em;
+    padding-right: 25%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), var(--overlay-color));
+}
+.rightButton{
+    right: 0;
+    padding-right: 1em;
+    padding-left: 25%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--overlay-color));
+}
+/* Pseudo element arrow */
+.rightButton span,
+.leftButton span {
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+/* Hover effects */
+@media (hover: hover) and (pointer: fine){
+    .leftButton:hover,
+    .rightButton:hover {
+        opacity: 1;
+    }
+    .leftButton:hover span{
+        border-right: 15px solid rgb(0, 0, 0,0.3) ;
+    }
+    .rightButton:hover span{
+        border-left: 15px solid rgb(0, 0, 0,0.3);
+    }
+}
+
+
+/* Image Select circles */
+.selectImage{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.selectImage span {
+    padding-left: 5px;
+    transition: all var(--base-transition-time) ease;
+}
+/* Pseudo element */
+.dotMarker {
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+    background-color:var(--sub-text-color);
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+
+}
+.selectImage span:hover{
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+/* To style the active circle */
+.selectedPoint {
+    transform: scale(1.5);
+    opacity: 0.7;
+}
+

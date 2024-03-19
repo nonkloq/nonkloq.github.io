@@ -1,0 +1,47 @@
+  
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  width: 10px;
+  height: 10px;
+  /* Nord frost */
+  background: linear-gradient(45deg, #8FBCBB,  #88C0D0,#81A1C1,  #5E81AC); 
+  margin: 10px;
+  animation: wave var(--smooth-transition-time) linear infinite;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+
+@keyframes wave {
+  0% {
+    transform: translateY(0) ;
+    /* opacity: 0.1; */
+  }
+  25% {
+    transform: translateY(-15px) ;
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-30px) ;
+    opacity: .5;
+  }
+  75% {
+    transform: translateY(-15px) ;
+    opacity: .75;
+  }
+  100%{
+    transform: translateY(0) ;
+    opacity: 1;
+  }
+}
