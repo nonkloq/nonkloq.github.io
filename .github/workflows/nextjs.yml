@@ -77,7 +77,7 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          GID: ${{ vars.GOOGLE_TRACKING_ID }}
+          GID: ${{ secrets.GID }}
       
       # next export command has been removed!!! #https://nextjs.org/docs/advanced-features/static-html-export
       # - name: Static HTML export with Next.js
