@@ -74,4 +74,3 @@ export default function ExperienceArray(props: { exparr: Experience[] }) {
     </>
   );
 }
-

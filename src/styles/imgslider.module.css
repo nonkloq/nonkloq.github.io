@@ -2,13 +2,15 @@
 .imgSliderContainer {
   width: fit-content;
   position: relative;
-  justify-self: center;
   margin-top: 1em;
   border: 2px solid var(--not-select);
   display: flex;
   flex-direction: column;
   border: none;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* Sub Container to hold the image and overlay buttons */

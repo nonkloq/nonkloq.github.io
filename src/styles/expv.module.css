@@ -92,6 +92,10 @@
   display: inline-block;
   overflow-y: auto;
   max-height: var(--exp-description-height);
+  text-align: justify;
+  text-justify: inter-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .textltr {
@@ -153,6 +157,8 @@
 @media screen and (max-width: 1279px) {
   .expViewContainer ul {
     padding: 1em;
+    margin: 0;
+    padding-top: 0;
   }
   .expContainer,
   .contentDiv {
@@ -168,6 +174,7 @@
 @media screen and (min-width: 1280px) {
   .expViewContainer ul {
     padding-left: 2em;
+    margin: 1em;
   }
 
   .expContainer,

@@ -36,7 +36,7 @@ export default function NotFoundPage() {
         textAlign: "justify",
       }}
     >
-      <h1>404 - Page Not Found</h1>
+      <h2>404 - Page Not Found</h2>
       <h5 style={{ marginTop: "10px", color: "#929aaa", maxWidth: "80%" }}>
         {trollMsg(path)}
       </h5>

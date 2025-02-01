@@ -87,17 +87,30 @@
 }
 .pagerContent {
   margin: 0 auto;
-  overflow-x: auto;
 }
 
 .pagerContent section {
   margin-bottom: 50px;
 }
 
+.pagerContent header p {
+  /*text-align: justify;*/
+  text-justify: inter-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
 .contentDiv {
   margin-left: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
+.contentDiv blockquote {
+  text-align: left;
+  font-size: var(--fsize-smol);
+}
 .contentDivLi {
   margin-left: 10px;
 }
@@ -220,4 +233,3 @@
     transform: translate3d(0);
   }
 }
-
