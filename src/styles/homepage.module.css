@@ -1,4 +1,3 @@
-
 /* Main div */
 .homedivmain {
   padding-left: var(--main-div-padding-left);
@@ -12,7 +11,6 @@
   padding-top: 10px;
   animation: fadeIn var(--normal-transition-time) ease-in-out 0s;
 }
-
 
 /* Skills Section */
 .skillsDiv {
@@ -39,15 +37,15 @@
   border: 1px solid;
   text-decoration: none;
   color: inherit;
-  animation: flipInY var(--smooth-transition-time) ease, fillBackground var(--smooth-transition-time) ease;
+  animation:
+    flipInY var(--smooth-transition-time) ease,
+    fillBackground var(--smooth-transition-time) ease;
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
 
-
 /* Intro Section */
 .introDiv {
-
   margin-top: var(--normal-margin-top);
   animation: fadeInSlow var(--smooth-transition-time) ease;
 }
@@ -66,7 +64,7 @@
 
 .introDiv h4 {
   /* color: var(--text-color-dark); */
-  font-size:  var(--fsize-mid);
+  font-size: var(--fsize-mid);
 }
 .introDiv h1 {
   font-size: var(--fsize-xlarge);
@@ -81,7 +79,6 @@
 .contactDiv h3 {
   display: inline;
   font-size: var(--fsize-mid);
-  
 }
 .contactDiv p {
   display: inline;
@@ -101,7 +98,7 @@
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  transition:  all var(--base-transition-time) ease;
+  transition: all var(--base-transition-time) ease;
 }
 
 .contactDiv .resumeBtn:hover {
@@ -118,19 +115,20 @@
   color: var(--text-color);
   transform: translateY(3px);
   border-radius: 5px;
-  transition: transform var(--base-transition-time) ease, background-color var(--base-transition-time) ease-in;
+  transition:
+    transform var(--base-transition-time) ease,
+    background-color var(--base-transition-time) ease-in;
 }
 .emailLink:visited,
 .resumeBtn:visited {
   color: var(--text-color);
 }
 
-.emailLink:hover{
+.emailLink:hover {
   transform: translateY(0);
   background-color: var(--highlight-color);
   text-decoration: none;
 }
-
 
 /* Animations --------------------------------------------------------------- */
 
@@ -141,7 +139,7 @@
     transform: translateY(-20px);
   }
   30% {
-    opacity: 0; 
+    opacity: 0;
     transform: translateY(-20px);
   }
   100% {
@@ -162,7 +160,6 @@
   }
 }
 
-
 /* For contact */
 @keyframes fadeIn2 {
   0% {
@@ -174,7 +171,6 @@
     transform: translateY(0);
   }
 }
-
 
 /* For skills */
 @keyframes fillBackground {
@@ -188,15 +184,14 @@
 
 @keyframes flipInY {
   0% {
-      transform: perspective(400px) rotateY(90deg) translateY(-20px);
-      opacity: 0;
+    transform: perspective(400px) rotateY(90deg) translateY(-20px);
+    opacity: 0;
   }
   100% {
-      transform: perspective(400px) rotateY(0deg) translateY(0);
-      opacity: 1;
+    transform: perspective(400px) rotateY(0deg) translateY(0);
+    opacity: 1;
   }
 }
-
 
 /* Media Query -------------------------------------------------------------- */
 /* Media query for mobile devices */
@@ -204,18 +199,14 @@
   .contactDiv h3 {
     text-decoration: underline;
     display: inline-block;
-  
   }
   .contactDiv p {
     display: inline-block;
   }
-
-  
 }
 
 @media screen and (max-height: 700px) {
-  .skillsDiv{
+  .skillsDiv {
     margin-top: var(--min-margin-top);
   }
-  
 }

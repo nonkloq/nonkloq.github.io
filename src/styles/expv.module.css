@@ -1,146 +1,177 @@
-
 /* Exp Array styl */
-.expListContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: var(--normal-margin-top);
-    /* Animation */
+.expListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: var(--max-margin-top);
 
-    animation: fadeIn var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  height: var(--experience-container-height);
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Animation */
+  animation: fadeIn var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1)
+    forwards;
+}
+.expListContainer {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 
-
+.expListContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 @keyframes fadeIn {
-    from {
-        transform: translateY(-2em);
-    }
-    to {
-        transform: translateY(0);
-    }
+  from {
+    transform: translateY(calc(-1 * var(--min-margin-top)));
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 /* Common exp holder */
 
-.expContainer{
-    padding-top: 2em;
-    /* font-size: var(--fsize-smol); */
-
+.expContainer {
+  direction: ltr;
+  padding: 0.5em 0.3em 0.5em 0.4em;
+  margin-bottom: 1em;
+  margin-left: 0.3em;
+  margin-top: 0.3em;
+  background-color: var(--primary-color); /* Background color */
+  float: left;
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color var(--smooth-transition-time) ease;
 }
+
+/*.expContainer:hover {*/
+/*  background-color: var(--overlay-color);*/
+/*}*/
+
 .expContainerLeft {
-    float: left;
+  float: left;
 }
 .expContainerLeft span {
-   display: block;
+  display: block;
 }
 .expTitle {
-    font-size: var(--fsize-smol);
-    text-align: left;
+  font-size: var(--fsize-smol);
+  text-align: left;
 }
 .expTitle a {
-    color: var(--tag-color);
-    text-decoration: none;
+  color: var(--tag-color);
+  text-decoration: none;
 }
 .expDuration {
-  color: var(--sub-text-color)
+  color: var(--sub-text-color);
 }
 .expMaxMin {
-    float: right;
-    width: 2ch;
-    font-size: var(--fsize-mid);
-    text-align: center;
-    border-radius: 100%;
-    color: var(--text-color-dark);
-    background-color: var(--highlight-color);
-    cursor: pointer;
+  float: right;
+  width: 2ch;
+  font-size: var(--fsize-mid);
+  text-align: center;
+  border-radius: 100%;
+  color: var(--text-color-dark);
+  background-color: var(--highlight-color);
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: background-color var(--base-transition-time) ease;
 }
 
+.expMaxMin:hover {
+  background-color: color-mix(in srgb, var(--hover-color) 60%, transparent);
+}
 
 /* Maximized View */
 
 .contentDiv {
-    font-size: var(--fsize-smol);
-    position: relative;
-    display: inline-block;
-    padding-top: .5em;
-    padding-left: 1em;
+  font-size: var(--fsize-smol);
+  position: relative;
+
+  direction: rtl;
+  display: inline-block;
+  overflow-y: auto;
+  max-height: var(--exp-description-height);
+}
+
+.textltr {
+  margin-left: 12px;
+  direction: ltr;
 }
 .contentDiv a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contentDiv li {
-    font-size: var(--fsize-smol);
-    padding: var(--li-padding);
+  font-size: var(--fsize-smol);
+  padding: var(--li-padding);
 }
 
 .expViewContainer {
-    margin-top: var(--min-margin-top);
-    transition: all var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1);
+  margin-top: var(--min-margin-top);
+  transition: all var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .expViewContainer .contentDiv,
 .expViewContainer .skillUsed {
-    animation: fadeIn2 var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1);
-
+  animation: fadeIn2 var(--smooth-transition-time)
+    cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @keyframes fadeIn2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .skillUsed {
-    align-content: center;
-    padding-left: 1em;
+  align-content: center;
+  padding-left: 1em;
 }
 
 .skillUsed span {
-    font-size: var(--fsize-xsmol);
-    display: inline-block;
-    
-    border-radius:5px;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+  font-size: var(--fsize-xsmol);
+  display: inline-block;
 
-    color: var(--skill-box-color);
-    background-color: var(--skill-box-bg);
-    border: 1px solid var(--skill-box-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  color: var(--skill-box-color);
+  background-color: var(--skill-box-bg);
+  border: 1px solid var(--skill-box-color);
 }
 
 /* Media query for mobile devices */
 @media screen and (max-width: 1279px) {
+  .expViewContainer ul {
+    padding: 1em;
+  }
+  .expContainer,
+  .contentDiv {
+    width: 85vw;
+  }
 
-    .expViewContainer ul {
-        padding: 1em;
-    }
-    .expContainer {
-        width: 340px;
-    }
-
-    .expContainerLeft {
-        font-size: var(--fsize-smol);
-    }
+  .expContainerLeft {
+    font-size: var(--fsize-smol);
+  }
 }
 
 /* Media query for desktop devices */
 @media screen and (min-width: 1280px) {
+  .expViewContainer ul {
+    padding-left: 2em;
+  }
 
-    .expViewContainer ul {
-        padding-left: 2em;
-    }
-    
-    .expContainer {
-        width: 600px;
-    }
-
+  .expContainer,
+  .contentDiv {
+    width: 70vw;
+  }
 }
-

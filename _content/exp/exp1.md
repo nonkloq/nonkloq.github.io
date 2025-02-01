@@ -10,6 +10,6 @@ skills:
   - "Data Science"
 ---
 
-- Developed a 97% accurate cough detection model for real-time use on low-resource devices without using ANNs. Also, developed a [GRBAS rating](https://www.researchgate.net/profile/Jeannie-Van-Der-Linde/publication/274336393/figure/tbl1/AS:614057765777420@1523414188682/GRBASI-4-point-rating-scale.png) model.
-- Performed Exploratory Data Analysis on [Azure Databricks](https://www.databricks.com/product/azure) to uncover unique patterns and trends.
-- Implemented a dashboard system with a custom data caching mechanism and efficient data processing algorithms. Built the user interface using [Streamlit](https://streamlit.io/) and [ECharts](https://echarts.apache.org/en/index.html) for visualization.
+- Developed a 97% accurate cough detection model for real-time use on low-resource devices without using ANNs. Contributed to the development of GRBAS Rating, Delirium Detection and Type 2 Diabetes Detection models using voice analysis. 
+- Implemented a highly customizable dashboard system for user data analysis, featuring a custom data caching mechanism and a lot of advanced data processing algorithms, with the user interface built using Streamlit.
+- Conducted Exploratory Data Analysis on Azure Databricks to identify patterns and trends. 
