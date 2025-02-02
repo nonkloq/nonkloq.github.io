@@ -4,11 +4,7 @@ import { usePathname } from "next/navigation";
 
 const trollMsg = (path: string) => {
   if (path.startsWith("/onlyfans")) {
-    return "Oh wow, you clicked that link with zero hesitation... Unfortunately, it's just bait. Time to reflect on your life choices.";
-  }
-
-  if (path === "/secret") {
-    return "Shhh... this was supposed to be a secret! But now that you're here, welcome to nothingness.";
+    return "Oh wow, you clicked that link with zero hesitation... Unfortunately, it's just bait.";
   }
 
   if (path.startsWith("/dei")) {
@@ -16,7 +12,7 @@ const trollMsg = (path: string) => {
   }
 
   if (path.startsWith("/rot")) {
-    return "Brain eating amoeba, pulled up a video, it's favorite water, Still Water, What do i do at those-who-know? Fucking still water. That night, sipping the fucking still water in the mango room by myself with it chilling. Why? i studied bro.";
+    return "Brain eating amoeba, pulled up a video, its favorite water, Still Water, What do i do at those-who-know? Fucking still water. That night, sipping the fucking still water in the mango room by myself with it chilling. Why? I studied bro.";
   }
 
   return "Misled by someone? Or did you do this to yourself?";
