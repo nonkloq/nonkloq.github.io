@@ -25,7 +25,7 @@ images:
   - "/images/ocf.png"
   - "/images/prof.png"
 
-shortDescription: "MERN Stack House Rental App with realtime chat deployed on Render."
+shortDescription: "MERN Stack House Rental App with realtime chat, deployed on Render."
 links:
   github: "https://github.com/nonkloq/rentit"
   demo: "https://rentit-jei9.onrender.com/"

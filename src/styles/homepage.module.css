@@ -8,7 +8,6 @@
 .aboutDiv {
   font-size: var(--fsize-about);
   margin-top: var(--normal-margin-top);
-  font-family: var(--font-norm);
   max-width: 70vw;
 
   padding-top: 10px;
