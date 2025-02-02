@@ -86,6 +86,7 @@
 
 .contentDiv {
   font-size: var(--fsize-smol);
+  font-family: var(--font-norm);
   position: relative;
 
   direction: rtl;

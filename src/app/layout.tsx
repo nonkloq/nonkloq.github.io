@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Mono as PageFont } from "next/font/google";
+import {
+  Noto_Sans_Mono as PageFontMono,
+  Cantarell as PageFontText,
+} from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "@/styles/globals.css";
 
-const pagefont = PageFont({
-  // weight: ["400"],
+const mono = PageFontMono({
+  //weight: ["500"],
+  variable: "--font-mono",
   subsets: ["cyrillic"],
+});
+
+const normal = PageFontText({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-norm",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +36,10 @@ export default function RootLayout({
         <GoogleAnalytics gaId="G-QY1XBQ50GP" />
       </head>
 
-      <body className={pagefont.className} suppressHydrationWarning={true}>
+      <body
+        className={`${mono.variable} ${normal.variable}`}
+        suppressHydrationWarning={true}
+      >
         {children}
       </body>
     </html>
