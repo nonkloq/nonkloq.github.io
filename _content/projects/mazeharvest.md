@@ -12,12 +12,12 @@ skills:
 tags:
   - "deep learning"
   - "reinforcement learning"
+  - "machine learning"
 
 images:
-
-  - "/svgs/mh_ov.svg"
+  - "/images/mh_cvr_art.png"
+  - "/gifs/lstmppo_net.gif"
   - "/images/mh_sample.png"
-  - "/gifs/rdqn_vision_net.gif"
 
 shortDescription: "A Grid based, partially observable, stochastic reinforcement learning environment."
 links:
@@ -50,4 +50,7 @@ The environment's difficulty is fully customizable, allowing users to create new
     max_steps=10000
 )
 
-For the agent, I've implemented two reinforcement learning algorithms using pytorch: Proximal Policy Optimization (PPO) and Rainbow Deep Q-Network (RDQN). Both utilize parallel environments. Full details of the implementation can be found here: [Implemented Algorithms](https://github.com/nonkloq/mazeharvest/tree/main?tab=readme-ov-file#implemented-algorithms).
+I have implemented three reinforcement learning algorithms using PyTorch for the agent: Proximal Policy Optimization (PPO), Rainbow Deep Q-Network (RDQN), and Proximal Policy Optimization with an LSTM (Long Short-Term Memory) layer for episodic memory. All three algorithms utilize parallel environments. Full details of the implementation can be found here: [Implemented Algorithms](https://github.com/nonkloq/mazeharvest/tree/main?tab=readme-ov-file#implemented-algorithms).
+
+The PPO-LSTM model successfully solved the easy, medium and hard modes, while the RDQN model solved only the easy mode.
+

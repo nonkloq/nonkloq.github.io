@@ -92,21 +92,58 @@
   display: block;
   width: max-content;
   text-decoration: none;
-  font-size: var(--fsize-smoll);
-  border: 1px solid var(--text-color-dark);
-  color: var(--text-color-dark);
-  background-color: var(--secondary-color);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   transition: all var(--base-transition-time) ease;
+  font-size: var(--fsize-smoll);
+  border: 1px solid var(--text-color-dark);
+  color: var(--text-color-dark);
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .contactDiv .resumeBtn:hover {
   color: var(--hover-color);
   border-color: var(--hover-color);
   box-shadow: 0px 0px 2px 2px var(--hover-color);
+}
+
+/* Full-screen overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfCloseButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all var(--base-transition-time) ease;
+  font-size: var(--fsize-smol);
+  color: var(--text-color-dark);
+  border: 1px solid var(--text-color-dark);
+  background-color: var(--secondary-color);
+}
+
+.pdfCloseButton:hover {
+  color: var(--primary-color);
+  background: var(--nord-goodbad);
+  border: 1px solid var(--primary-color);
+}
+
+.modalIframe {
+  flex: 1;
+  border: none;
+  width: 100%;
 }
 
 .emailLink {
