@@ -8,6 +8,7 @@ skills:
   - "Pygame"
   - "numpy"
   - "gymnasium"
+  - "Panda3D"
 
 tags:
   - "deep learning"
@@ -19,6 +20,7 @@ images:
   - "/images/mz_bv.png"
   - "/gifs/lstmppo_net.gif"
   - "/images/mz_fpp.png"
+  - "/gifs/mz3drun.gif"
   - "/images/mz_td.png"
   - "/images/mh_sample.png"
 
@@ -27,7 +29,7 @@ links:
   github: "https://github.com/nonkloq/mazeharvest"
 ---
 
-MazeHarvest is a grid-based reinforcement learning environment designed to train autonomous navigation agents in a partially observable environment. The agent must navigate complex terrains, interact with dynamic obstacles, and reach target locations using heuristic information and vector representation of objects in front of it to a certain distance. The environment simulates real-world navigation challenges, such as limited visibility, dynamic obstacles, and heuristic based decision making.
+MazeHarvest is a grid-based reinforcement learning environment designed to train autonomous navigation agents in a partially observable environment. The agent must navigate complex terrains, interact with dynamic obstacles, and reach target locations using heuristic information and vector representation of objects in front of it to a certain distance. The environment simulates real world navigation challenges, such as limited visibility, dynamic obstacles, and heuristic based decision making.
 
 Each environment instance is randomly generated, ensuring connectivity between all free cells. The moles use a multithreaded, depth restricted A-star search algorithm combined with probabilistic logic to determine their next move. This approach ensures they explore efficiently and avoid getting stuck indefinitely. Both the moles and toxic plants are spawned randomly. For more details, visit the project repository: [MazeHarvest README](https://github.com/nonkloq/mazeharvest/blob/main/homegym/README.md).
 
