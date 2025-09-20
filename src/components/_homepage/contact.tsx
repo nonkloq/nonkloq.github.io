@@ -14,26 +14,26 @@ export default function Contact() {
       </a>
       <p>{' or drop a "Hii" in my DMs.'}</p>
 
-      <a onClick={() => setPreviewOpen(true)} className={styles.resumeBtn}>
-        View My Resume
-      </a>
-
-      {isPreviewOpen && (
-        <div className={styles.modalOverlay}>
-          <button
-            onClick={() => setPreviewOpen(false)}
-            className={styles.pdfCloseButton}
-          >
-            Close Preview
-          </button>
-          <iframe
-            src="/resume.pdf#toolbar=1&navpanes=0&scrollbar=0"
-            className={styles.modalIframe}
-            allow="fullscreen"
-          />
-        </div>
-      )}
+      {/* Disable for now */}
+      {/* <a onClick={() => setPreviewOpen(true)} className={styles.resumeBtn}> */}
+      {/*   View My Resume */}
+      {/* </a> */}
+      {/**/}
+      {/* {isPreviewOpen && ( */}
+      {/*   <div className={styles.modalOverlay}> */}
+      {/*     <button */}
+      {/*       onClick={() => setPreviewOpen(false)} */}
+      {/*       className={styles.pdfCloseButton} */}
+      {/*     > */}
+      {/*       Close Preview */}
+      {/*     </button> */}
+      {/*     <iframe */}
+      {/*       src="/resume.pdf#toolbar=1&navpanes=0&scrollbar=0" */}
+      {/*       className={styles.modalIframe} */}
+      {/*       allow="fullscreen" */}
+      {/*     /> */}
+      {/*   </div> */}
+      {/* )} */}
     </section>
   );
 }
-
