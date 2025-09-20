@@ -1,20 +1,60 @@
 {
-    "Python": {"level": 9, "color": "#EBCB8B", "link": "https://www.python.org/"},
-    "C++": {"level": 5, "color": "#81A1C1", "link": "https://isocpp.org/"},
-    "C": {"level": 6, "color": "#81A1C1", "link": "https://en.wikipedia.org/wiki/C_(programming_language)"},
-    "Linux": {"level": 8, "color": "#D8DEE9", "link": "https://www.linux.org/"},
-    "Machine Learning": {"level": 8, "color": "#D8DEE9", "link": "https://en.wikipedia.org/wiki/Machine_learning"},
-    "Pytorch": {"level": 8, "color": "#D08770", "link": "https://pytorch.org/"},
-    "Tensorflow": {"level": 3, "color": "#D08770", "link": "https://www.tensorflow.org/"},
-    "Data Science": {"level": 7, "color": "#D8DEE9", "link": "https://en.wikipedia.org/wiki/Data_science"},
-    "Javascript": {"level": 7, "color": "#EBCB8B", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
-    "Typescript": {"level": 7, "color": "#8FBCBB", "link": "https://www.typescriptlang.org/"},
-    "Go": {"level": 4, "color": "#88C0D0", "link": "https://golang.org/"},
-    "SQL": {"level": 6, "color": "#8FBCBB", "link": "https://en.wikipedia.org/wiki/SQL"},
-    "R": {"level": 3, "color": "#8FBCBB", "link": "https://www.r-project.org/"},
-    "Git": {"level": 6, "color": "#BF616A", "link": "https://git-scm.com/"},
-    "React": {"level": 7, "color": "#88C0D0", "link": "https://reactjs.org/"},
-    "Next.js": {"level": 7, "color": "#D8DEE9", "link": "https://nextjs.org/"},
-    "Docker": {"level": 5, "color": "#88C0D0", "link": "https://www.docker.com/"},
-    "Rust": {"level": 3, "color": "#D58770", "link": "https://www.rust-lang.org/"}
+  "Python": {
+    "level": 9,
+    "color": "#EBCB8B",
+    "link": "https://www.python.org/"
+  },
+  "C++": { "level": 6, "color": "#81A1C1", "link": "https://isocpp.org/" },
+  "C": {
+    "level": 6,
+    "color": "#81A1C1",
+    "link": "https://en.wikipedia.org/wiki/C_(programming_language)"
+  },
+  "Linux": { "level": 8, "color": "#D8DEE9", "link": "https://www.linux.org/" },
+  "Machine Learning": {
+    "level": 8,
+    "color": "#D8DEE9",
+    "link": "https://en.wikipedia.org/wiki/Machine_learning"
+  },
+  "Pytorch": { "level": 8, "color": "#D08770", "link": "https://pytorch.org/" },
+  "Tensorflow": {
+    "level": 3,
+    "color": "#D08770",
+    "link": "https://www.tensorflow.org/"
+  },
+  "Data Science": {
+    "level": 7,
+    "color": "#D8DEE9",
+    "link": "https://en.wikipedia.org/wiki/Data_science"
+  },
+  "Javascript": {
+    "level": 6,
+    "color": "#EBCB8B",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  "Typescript": {
+    "level": 6,
+    "color": "#8FBCBB",
+    "link": "https://www.typescriptlang.org/"
+  },
+  "Go": { "level": 4, "color": "#88C0D0", "link": "https://golang.org/" },
+  "SQL": {
+    "level": 6,
+    "color": "#8FBCBB",
+    "link": "https://en.wikipedia.org/wiki/SQL"
+  },
+  "R": { "level": 3, "color": "#8FBCBB", "link": "https://www.r-project.org/" },
+  "Git": { "level": 6, "color": "#BF616A", "link": "https://git-scm.com/" },
+  "React": { "level": 6, "color": "#88C0D0", "link": "https://reactjs.org/" },
+  "Next.js": { "level": 6, "color": "#D8DEE9", "link": "https://nextjs.org/" },
+  "Docker": {
+    "level": 7,
+    "color": "#88C0D0",
+    "link": "https://www.docker.com/"
+  },
+  "Rust": {
+    "level": 6,
+    "color": "#D58770",
+    "link": "https://www.rust-lang.org/"
+  }
 }
