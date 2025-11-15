@@ -1,5 +1,5 @@
 ---
-title: "Data Engineer"
+title: "Clinical Data Analyst"
 date: "2025-05-01"
 range: "Jun 2025 - Present"
 company: "MiiCare"
@@ -8,7 +8,9 @@ skills:
   - "Python"
   - "Machine Learning"
   - "Software Development"
+  - "Data Engineering"
 ---
 
-- Offloaded heavy ML workloads from edge devices to Azure and optimized on device feature extraction in C++ for faster processing while protecting user privacy.
-- Designed and implemented scalable ELT & ETL pipeline services to process high volume raw datasets, with monitoring and alerting built using Prometheus and Grafana.
+- Built scalable real-time data ingestion pipelines with full monitoring and alerting.
+- Developed efficient on-device feature extraction and contributed to cloud-based ML workflows.
+- Created an LLM-powered smart insights system that delivers personalized, automated alerts to users.
