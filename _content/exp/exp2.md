@@ -1,5 +1,5 @@
 ---
-title: "Software Engineering, Data & ML"
+title: "Software Engineer, Data & ML"
 date: "2025-05-01"
 range: "Jun 2025 - Present"
 company: "MiiCare"
