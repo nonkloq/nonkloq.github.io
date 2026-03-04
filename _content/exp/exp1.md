@@ -10,6 +10,6 @@ skills:
   - "Data Science"
 ---
 
-- Built a real-time cough detection model for edge devices and contributed to voice-based GRBAS scoring, [Type 2 Diabetes prediction](https://arxiv.org/abs/2411.19204), and delirium detection models.
+- Built a real-time cough detection model for edge devices and contributed to voice-based GRBAS scoring, [Type 2 Diabetes triage](https://dl.acm.org/doi/10.1145/3761712.3761773), and delirium detection models.
 - Developed a dashboard library for creating customizable, interactive data dashboards for diverse client needs.
 - Worked with large IoT and clinical datasets to uncover patterns and developed algorithms to detect key health related events.
