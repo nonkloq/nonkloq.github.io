@@ -8,7 +8,7 @@ export default function Intro() {
         <h6>{"I'm "}</h6>
         <h3>{"Sathish Kumaran"}</h3>
       </span>
-      <h4>{"SDE | ML & Data Science"}</h4>
+      <h4>{"SWE | ML & Data Science"}</h4>
     </section>
   );
 }
