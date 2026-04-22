@@ -1,17 +1,15 @@
 ---
-title: "Software Engineer, Data & ML"
-date: "2025-05-01"
-range: "Jun 2025 - Present"
+title: "Clinical Data Analyst"
+date: "2023-11-15"
+range: "Nov 2023 - May 2025"
 company: "MiiCare"
 link: "https://www.miicare.co.uk"
 skills:
   - "Python"
   - "Machine Learning"
-  - "Software Development"
-  - "Data Engineering"
+  - "Data Science"
 ---
 
-- Built scalable real-time data ingestion pipelines with full monitoring and alerting.
-- Developed efficient on-device feature extraction and contributed to cloud-based ML workflows.
-- Created an LLM-powered smart insights system that delivers personalized, automated alerts & insights to users.
-- Finetuned AST model for footstep segment extraction from audio data with a custom feature extractor.
+- Developed voice-based GRBAS scoring, delirium detection model and contributed to [Type 2 Diabetes triage](https://dl.acm.org/doi/10.1145/3761712.3761773) model.
+- Developed a dashboard library for creating customizable, interactive data dashboards for diverse client needs.
+- Worked with large IoT and clinical datasets to uncover patterns and developed algorithms to detect key health related events.
