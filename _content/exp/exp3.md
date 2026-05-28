@@ -7,7 +7,7 @@ link: "https://www.miicare.co.uk"
 skills:
   - "Python"
   - "Machine Learning"
-  - "Software Development"
+  - "Software Engineering"
   - "Data Engineering"
 ---
 

@@ -9,16 +9,27 @@
   overflow-y: auto;
   overflow-x: hidden;
   /* Animation */
-  animation: fadeIn var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: HopIn var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1)
+    forwards;
 }
 
-@keyframes fadeIn {
+@keyframes HopIn {
   from {
-    transform: translateY(calc(-1 * var(--min-margin-top)));
+    transform: translateY(-2em);
   }
 
   to {
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes HopBack {
+  from {
+    transform: translateY(2em);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
 
@@ -26,10 +37,10 @@
 
 .expContainer {
   direction: ltr;
-  padding: 0.5em 0.3em 0.5em 0.4em;
+  padding: 0.3em 0.1em 0.3em 0.2em;
   margin-bottom: 1em;
-  margin-left: 0.3em;
-  margin-top: 0.3em;
+  margin-left: 0em;
+  margin-top: 0.15em;
   background-color: var(--primary-color);
   /* Background color */
   float: left;
@@ -113,16 +124,18 @@
 }
 
 .expViewContainer {
-  margin-top: var(--min-margin-top);
+  margin-top: calc(var(--max-margin-top) - 2em);
+  animation: HopBack var(--smooth-transition-time)
+    cubic-bezier(0.23, 1, 0.32, 1) forwards;
   transition: all var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .expViewContainer .contentDiv,
 .expViewContainer .skillUsed {
-  animation: fadeIn2 var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1);
+  animation: fadeIn var(--smooth-transition-time) cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@keyframes fadeIn2 {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
